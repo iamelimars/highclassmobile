@@ -1,9 +1,167 @@
 
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Lora|Muli:200,300,400,700i');
 
 // Variables
 @import "variables";
 
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+body {
+  font-family: 'Muli', sans-serif;
+}
+
+.navbar-default {
+  margin-top: 30px;
+  background-color: transparent;
+  border-color: transparent;
+  .navbar-nav {
+    li {
+        a {
+        color: white ;
+      }
+    }
+  }
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 24px;
+  color: $primary-blue-light !important;
+  span {
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+  }
+  img {
+    // padding-top: -20px;
+    width: 50px;
+    height: 50px;
+  }
+}
+.section {
+  min-height: 400px;
+  height: 80vh;
+  width: 100vw;
+  h2 {
+    margin-top: 20vh;
+    font-weight: 200;
+  }
+}
+#hero {
+  margin-top: -104px;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url('/images/mercedes.png');
+  // background-image: url('/images/car.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  #hero-top {
+    position: absolute;
+    top: 40vh;
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: 30px;
+  }
+  #hero-middle {
+    position: absolute;
+    top: 48vh;
+    color: white;
+    font-size: 45px;
+    font-weight: 200;
+  }
+  #hero-bottom {
+    position: absolute;
+    top: 60vh;
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: 30px;
+  }
+  button {
+    top: 85vh;
+    position: absolute;
+    background-color: $primary-blue-light;
+  }
+
+}
+
+#services {
+  height: 80vh;
+  width: 100vw;
+  h2 {
+    margin-top: 20vh;
+    font-weight: 200;
+  }
+  .service-section {
+    margin-top: 10vh;
+    h4 {
+      margin-top: 80px;
+      font-weight: 200;
+    }
+    i{
+      color: $primary-blue-light;
+    }
+  }
+}
+
+#pricing {
+  background-color: $primary-tan;
+  .pricing-section {
+
+    h3 {
+      font-weight: 300;
+      margin-bottom: 5vh;
+      color: $primary-blue-dark;
+    }
+    h4 {
+      font-weight: 200;
+    }
+  }
+}
+#about {
+    p {
+      margin-top: 10vh;
+      font-size: 18px;
+      font-weight: 200;
+    }
+}
+#team {
+  background-color: $primary-tan;
+  .team-card {
+    background-color: white;
+    min-height: 300px;
+  }
+}
+#gallery {
+
+}
+#contact {
+  background-color: $primary-tan;
+  h2 {
+    margin-bottom: 5vh;
+  }
+  h4 {
+    margin-bottom: 10vh;
+  }
+  #instagram {
+    color: #fbad50;
+  }
+  #facebook {
+    color: #3b5998;
+  }
+  #snapchat {
+    color: #fffc00;
+  }
+
+}
+#bottom-footer {
+  width: 100vh;
+  height: 40px;
+}
